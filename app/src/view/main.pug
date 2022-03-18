@@ -1,0 +1,33 @@
+main.main
+    .container 
+        .main__tabs 
+                .main__content 
+                    .main__content-categories 
+                        ul.main__content-list
+                            - var list = ['Все','Мясные','Вегетарианская','Гриль', 'Острые' ,'Закрытые']
+                            each item in list 
+                                li: a(href="").main__content-link= item 
+                    .main__content-sort 
+                        .main__content-label 
+                            img.main__content-arrow(src="./images/sort.svg", alt="")
+                            span.main__content-sortSpan  Сортировка по:
+                            span.main__content-sortInfo  
+                        .main__content-sortPopup 
+                            ul
+                                - var arr = ['популярности', 'цене', 'алфавиту']
+                                each item in arr 
+                                    li.main__content-li= item
+                h3.main__content-title Все пиццы
+                .main__tabs-content 
+                //- .main__tabs-item 
+                //-     img.main__tabs-img(src="./images/images/chheseBurgerpizza.webp", alt="")
+                //-     h4.main__tabs-title Чизбургер-пицца
+                //-     .main__tabs-info 
+                //-         a.main__tabs-btn(href="") тонкое
+                //-         a.main__tabs-btn(href="") традиционное
+                //-         a.main__tabs-size(href="") 26 см. 
+                //-         a.main__tabs-size(href="") 30 см. 
+                //-         a.main__tabs-size(href="") 40 см. 
+                //-     .main__tabs-add 
+                //-         span.main__tabs-price от 395 ₽
+                //-         a.main__tabs-addCart(href="") + Добавить  

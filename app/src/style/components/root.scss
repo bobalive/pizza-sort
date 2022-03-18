@@ -1,0 +1,41 @@
+$orange :#FE5F1E;
+$white:#FFFFFF;
+$blackLight: #282828;
+$black: #000000;
+$graydark:#F3F3F3;
+$gray:#F9F9F9;
+$textColor:#2C2C2C;
+$fonts: ('proxima-nova-bold',700),
+        ('proxima-nova-extrabold',800),
+        ('proxima-nova-regular', 400);
+
+@each $name, $weight in $fonts{
+    @font-face {
+        font-family: $name;
+        src: url('../fonts/#{$name}.woff ');
+        font-weight: $weight;
+    }
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+.container{
+    max-width: 1235px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+body{
+    background: #FFDF8C;
+    padding: 43px 55px 63px 45px;
+}
+.wrapper{
+    background: $white;
+    border-radius: 10px 10px 0 0 ;
+    box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.03);
+}

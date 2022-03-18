@@ -1,0 +1,93 @@
+.header{
+    
+    // position: relative;
+    
+    &::after{
+        content: '';
+        display: block;
+        width: 100%;
+        height: 1px;
+        background: #F7F7F7;
+    }
+    
+    
+    &__logo{
+        &-description{
+            font-size: 16px;
+            line-height: 19px;
+            color: #7B7B7B;
+            font-family:'proxima-nova-regular' ;
+        }
+        
+        
+        &-title{
+        font-size: 24px;
+        line-height: 29px;
+        letter-spacing: 0.01em;
+        text-transform: uppercase;
+        color: $black;
+        font-family: 'proxima-nova-extrabold'; 
+        }   
+    }
+    
+    &__nav{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 49px 0 35px 0;
+        
+        
+        &-logo{
+            display: flex;
+            
+        }
+        
+        &-btn{
+            padding: 15px 23px;
+            border-radius: 30px;
+            background: $orange ;
+            border: none;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        &-price{
+            font-size: 16px;
+            line-height: 19px;
+            color: $white;
+            font-family: 'proxima-nova-bold';
+            display: flex;
+            align-items: center;
+           
+            &::after{
+                content: '';
+                display: block;
+                width: 1px;
+                height: 25px;
+                background: rgba(255, 255, 255, 0.25);
+                margin: 0 13px;
+            }
+            
+        }
+        &-amount{
+            
+            display: flex;
+            align-items: center;
+            
+            & span{
+            font-size: 16px;
+            line-height: 19px;
+            color: $white;
+            font-family: 'proxima-nova-bold';
+            margin-left: 9px;
+        }
+        }
+        
+    }
+    &__logo{
+        &-text{
+            margin-left: 17px;
+        }
+    }
+    
+}

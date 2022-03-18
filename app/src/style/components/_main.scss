@@ -1,0 +1,216 @@
+.main{
+    background: $white;
+    padding: 40px 0 96px 0;
+    border-radius: 0 0 10px 10px;
+    
+    &__content{
+        display: flex;
+        justify-content: space-between;
+        
+        &-list{
+            display: flex;
+            gap: 9px ;
+        }
+        
+        &-link{
+            display: inline-block;
+            background: $gray;
+            color: $textColor;
+            border-radius: 30px;
+            padding: 14px 36px 16px 36px ;
+            font-size: 16px;
+            line-height: 19px;
+            text-align: center;
+            letter-spacing: 0.015em;
+            font-family: 'proxima-nova-bold';
+            
+            
+            &.active{
+                background: $blackLight;
+                color: $white;
+            }
+            
+            
+        }
+        
+        &-sort{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            user-select: none;
+        }
+        
+        &-sortSpan{
+            letter-spacing: 0.015em;
+            font-size: 14px;
+            line-height: 17px;
+            font-family: 'proxima-nova-bold';
+            color: $blackLight;
+            margin: 0 8px;
+        }
+        
+        &-sortInfo{
+            color: $orange;
+            font-size: 14px;
+            line-height: 17px;
+            letter-spacing: 0.015em;
+            font-family: 'proxima-nova-regular';
+            border-bottom: 1px dashed $orange;
+            margin: 8px;
+        }
+        
+        &-sortPopup{
+            max-width: 132px;
+            width: 100%;
+            background: #FFFFFF;
+            box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.09);
+            border-radius: 10px;
+            padding: 13px 0;
+            margin-left: auto;
+            margin-top: 8px;
+            display: none;
+            
+            &.active{
+                display: block;
+            }
+            
+        }
+        &-li{
+            letter-spacing: 0.015em;
+            font-size: 14px;
+            line-height: 17px;
+            color: $black;
+            font-family: 'proxima-nova-regular';
+            padding: 10px 22px 11px 14px;
+            transition: 0.5s;
+            cursor: pointer;
+            
+            &:hover{
+                color: $orange;
+                background: rgba(254, 95, 30, 0.05);
+                
+            }
+            &.active{
+                font-weight:bold;
+                color: $orange;
+                background: rgba(254, 95, 30, 0.05);
+            }
+        
+        }
+        
+        &-arrow{
+            transition: 0.4s;
+        }
+        
+        
+        &-title{
+            margin-top: 32px;
+            margin-bottom: 35px;
+            letter-spacing: 0.01em;
+            font-size: 32px;
+            line-height: 39px;
+            font-family: 'proxima-nova-bold';
+        }
+        
+    }
+        
+    &__tabs{
+        
+        &-item{
+            max-width: 280px;
+            width: 100%;
+            
+        }
+        
+        &-title{
+            letter-spacing: 0.01em;
+            font-size: 20px;
+            line-height: 24px;
+            color: $black;
+            font-family:'proxima-nova-extrabold';
+            margin-top: 11px;
+            margin-bottom: 22px;
+            text-align: center;
+        }
+        &-info{
+            background: $graydark;
+            border-radius: 10px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 7px 6px;
+            row-gap: 7px;
+        }
+        &-btn{
+            display: flex;
+            max-width: 132px;
+            width: 100%;
+            color: $textColor;
+            font-size: 14px;
+            line-height: 17px;
+            font-family: 'proxima-nova-bold';
+            letter-spacing: 0.015em;
+            justify-content: center;
+            padding: 7px 0 15px 0;
+            
+            &.active{
+                background: white;
+                box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.04);
+                border-radius: 5px;
+            }
+            
+
+        }
+            &-content{
+                display: flex;
+                justify-content: space-around;
+                flex-wrap: wrap;
+                row-gap: 65px;
+            }        
+        
+        &-size{
+            display: flex;
+            max-width: 86px;
+            width: 100%;
+            font-size: 14px;
+            line-height: 17px;
+            font-family: 'proxima-nova-bold';
+            justify-content: center;
+            padding: 7px 0 15px  0;
+            letter-spacing: 0.015em;
+            color: $textColor;
+            
+            &.active{
+                background: white;
+                box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.04);
+                border-radius: 5px;
+            }
+        }
+        
+        &-add{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 17px;
+        }
+        &-addCart{
+            display: flex;
+            border: 1px solid #EB5A1E;
+            border-radius: 30px;
+            padding: 11px 18px 14px 18px;
+            color: $orange;
+            font-size: 16px;
+            line-height: 19px;
+            
+            font-family: 'proxima-nova-bold';
+        }
+        &-price{
+            letter-spacing: 0.015em;
+            color: black;
+            font-size: 22px;
+            line-height: 27px;
+            font-family: 'proxima-nova-bold';
+        }
+    }
+    
+}
